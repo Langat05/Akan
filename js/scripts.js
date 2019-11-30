@@ -1,5 +1,5 @@
 var CC, YY, MM, DD, d, dayValue;
-var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+var daysNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
@@ -9,11 +9,11 @@ function validate() {
         alert("Input the year");
         document.myForm.year.focus();
         return false;
-    } else if (document.myForm.month.value == "") {
+    } else if (document.myForm.month.value == "" || isNaN( document.myForm.month.value ) ) {
         alert("Input the month");
         document.myForm.month.focus();
         return false;
-    } else if (document.myForm.date.value == "") {
+    } else if (document.myForm.date.value == "" || isNaN( document.myForm.month.value )) {
         alert("Input the date")
         document.myForm.date.focus();
         return false;
@@ -39,9 +39,9 @@ function calculateDayValue() {
 
 function getGender() {
     var genders = document.getElementsByName("gender");
-    if (pesron[0].checked == true) {
+    if (gender[0].checked == true) {
         var gender = "male";
-    } else if (person[1].checked == true) {
+    } else if (gender[1].checked == true) {
         var gender = "female";
     } else {
         return false;
