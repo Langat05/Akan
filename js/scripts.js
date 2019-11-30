@@ -10,4 +10,8 @@ function validate() {
       document.myForm.year.focus();
       return false;
   }  
+  else if(document.myForm.month.value == "" || document.myForm.month.value <=0 || document.myForm.month >12) {
+      alert ("Invalid date");
+      return false;
+  }
 }
