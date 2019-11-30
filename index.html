@@ -7,56 +7,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Akan Names</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="./js/scripts.js"></script>
+    <script src="./js/script.js"></script>
 
 </head>
 
 <body>
-
     <div class="container">
         <div class="jumbotron">
-            <h1>Akan Names</h1>
+
+
+            <h1> Akan Names </h1>
+
             <p>Hello there, welcome to this useful website where we will be showing you a name you could
                 be having if you were a Ghananian according to the Ghanian culture. Here we will be using the date,
-                month and the year of birth to determine the
-                name. It is very accurate and the website uses the information you have input to determine the results.
-                Try now and
-                have fun!
-            </p>
+                month, the year of birth and century to determine the name.<br> Oh! It is very accurate, try now and have fun!</p>
+                
+                
         </div>
-      
-        <form name="myForm" class="form" onsubmit="validate();">
-                <div class="form-group">
-                <label for="number">Year of birth</label>
-                <input type="number" class="form-control" min="1500" max="2019" id="year" name="year">
-            </div>
-
-
-            <div class="form-group"><br>
-                <label for="month">Born month</label><br>
-                <input type="number" class="form-control" id="month" name="month" min="01" max="12">
-            </div>
-
-            <div class="form-group">
-                <label for="date">Date of birth</label><br>
-                <input type="number" class="form-control" id="date" name="date" min="01" max="31">
-            </div>
-
-            <div class="form-group">
-                <label for="month">Gender</label> <br>
-                <div class="form-check-label">
-                    <input type="radio" class="form-check-input" name="gender" id="male">&nbsp;Male
-                </div>
-
-                <div class="form-check-label">
-                    <input type="radio" class="form-check-input" name="gender" id="female">&nbsp; Female
-                </div>
-            </div>
-            <button type="submit" onclick="findName();">submit</button> <br>
-        </form>
-        <p id="results"></p>
+    
+    
+    <div class="form-group">
+    <label for="century" class="labels">Century</label>
+    <input type="number" class="form-control" placeholder="for example 19" id="century" required min="1" max="30">
     </div>
-    <script src="./js/scripts.js"></script> 
+    <div class="form-group">
+        <label for="year" class="labels">Year</label>
+        <input type="number" class="form-control" placeholder = "for example 92" id="year" required min="1" max="100">
+    </div>
+    <div class="form-group">
+        <label for="month" class="labels">Month</label>
+        <input type="number" class="form-control" id="month" required min="1"
+            max="12">
+    </div>
+    <div class="form-group">
+        <label for="monthDay" class="labels">Day of month</label>
+        <input type="number" class="form-control" id="monthday" required
+            min="0" max="12">
+    </div>
+    
+    <form class="radio-button">
+        <input type="radio" class="genders labels" value="male" id="rad1" name="rads" required>Male
+        <input type="radio" class="genders labels" value="female" id="rad1" name="rads" required>Female
+    </form>
+    <br>
+    <a href="#result"><button type="button" name="button"
+            onclick="checkDayOfWeek();">Check</button></a>
+    <h1 id="result"></h1>
+
+</div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
