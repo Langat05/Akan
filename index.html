@@ -8,6 +8,7 @@
     <title>Akan Names</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="./js/scripts.js"></script>
+
 </head>
 
 <body>
@@ -25,35 +26,36 @@
         </div>
 
         <form name="myForm" class="form" onsubmit="validate();">
-            <div class="form group">
-                <label for="Year">Year of birth</label><br>
-                <input type="number" min="1500" max="2019" id="year">
+            <div class="form-group">
+                <label for="number">Year of birth</label>
+                <input type="number" min="1500" max="2019" id="year" name="year">
             </div>
 
 
             <div class="form-group"><br>
                 <label for="month">Born month</label><br>
-                <input type="number" min="01" max="12">
+                <input type="number" class="form-control" name="month" min="01" max="12">
             </div>
 
             <div class="form-group">
-                <label for="Date of birth">Date of birth</label><br>
-                <input type="number" min="01" max="31">
+                <label for="date">Date of birth</label><br>
+                <input type="number" class="form-control" name="date" min="01" max="31">
             </div>
 
             <div class="form-group">
                 <label for="sex">Gender</label> <br>
                 <div class="form-check-label">
-                    <input type="radio" name="gender" id="male">&nbsp;Male
+                    <input type="radio" class="form-check-input" name="gender" id="male">&nbsp;Male
                 </div>
 
                 <div class="form-check-label">
-                    <input type="radio" name="gender" id="female">&nbsp; Female
+                    <input type="radio" class="form-check-input" name="gender" id="female">&nbsp; Female
                 </div>
             </div>
-            <button type="submit" onclick="findName()" ;>submit</button>
+            <button type="submit" onclick="findName();">submit</button> <br>
         </form>
         <p id="results"></p>
+    </div>
 </body>
 
 </html>

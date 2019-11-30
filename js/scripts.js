@@ -4,7 +4,7 @@ var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 function validate() {
-    var person = document.getElementsByName("gender");
+    var genders = document.getElementsByName("gender");
     if (document.myform.year.value == "") {
         alert("Input the year");
         document.myForm.year.focus();
@@ -26,7 +26,7 @@ function validate() {
 
 }
 
-function findDayValue() {
+function calculateDayValue() {
     year = document.getElementById("year").value;
     CC = parseInt(year.substring(0, 2));
     YY = parseInt(year.substring(2, 4));
@@ -38,7 +38,7 @@ function findDayValue() {
 }
 
 function getGender() {
-    var person = document.getElementsByName("gender");
+    var genders = document.getElementsByName("gender");
     if (pesron[0].checked == true) {
         var gender = "male";
     } else if (person[1].checked == true) {
@@ -85,6 +85,6 @@ function getGender() {
     }
 }
 function findName(){
-    dayValue = findDayValue();
+    dayValue = calculateDayValue();
     getGender();
 }
