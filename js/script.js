@@ -9,16 +9,16 @@ function getInput(){
 
   if(century == ""){
     alert("Invalid century");
-    return false;
+    
   }else if (year == ""){
     alert("Invalid year");
-    return false;
-  }else if (month == ""){
+    
+  }else if (month == "" || month>12 || month<1){
     alert("Invalid month");
-    return false;
-  }else if(dayOfMonth == ""){
+    
+  }else if(dayOfMonth == "" || dayOfMonth>31 || dayOfMonth<1){
     alert("invalid date");
-    return false;
+    
   }
 }
 
