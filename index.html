@@ -14,47 +14,39 @@
 <body>
     <div class="container">
         <div class="jumbotron">
-
-
             <h1> Akan Names </h1>
-
             <p>Hello there, welcome to this useful website where we will be showing you a name you could
                 be having if you were a Ghananian according to the Ghanian culture. Here we will be using the date,
-                month, the year of birth and century to determine the name.<br> Oh! It is very accurate, try now and have fun!</p>
-                
-                
+                month, the year of birth and century to determine the name.<br> Oh! It is very accurate, try now and
+                have fun!</p>
         </div>
-    
-    
-    <div class="form-group">
-    <label for="century" class="labels">Century</label>
-    <input type="number" class="form-control" placeholder="for example 19" id="century" required min="1" max="30">
-    </div>
-    <div class="form-group">
-        <label for="year" class="labels">Year</label>
-        <input type="number" class="form-control" placeholder = "for example 92" id="year" required min="1" max="100">
-    </div>
-    <div class="form-group">
-        <label for="month" class="labels">Month</label>
-        <input type="number" class="form-control" id="month" required min="1"
-            max="12">
-    </div>
-    <div class="form-group">
-        <label for="monthDay" class="labels">Day of month</label>
-        <input type="number" class="form-control" id="monthday" required
-            min="0" max="12">
-    </div>
-    
-    <form class="radio-button">
-        <input type="radio" class="genders labels" value="male" id="rad1" name="rads" required>Male
-        <input type="radio" class="genders labels" value="female" id="rad1" name="rads" required>Female
-    </form>
-    <br>
-    <a href="#result"><button type="button" name="button"
-            onclick="checkDayOfWeek();">Check</button></a>
-    <h1 id="result"></h1>
 
-</div>
+        <div class="form-group">
+            <label for="century" class="labels">Century</label>
+            <input type="number" class="form-control" placeholder="for example 19" id="century" required min="1"
+                max="30">
+        </div>
+        <div class="form-group">
+            <label for="year" class="labels">Year</label>
+            <input type="number" class="form-control" placeholder="for example 92" id="year" required min="1" max="100">
+        </div>
+        <div class="form-group">
+            <label for="month" class="labels">Month</label>
+            <input type="number" class="form-control" id="month" required min="1" max="12">
+        </div>
+        <div class="form-group">
+            <label for="monthDay" class="labels">Day of month</label>
+            <input type="number" class="form-control" id="monthday" required min="0" max="12">
+        </div>
+
+        <form class="radio-button">
+            <input type="radio" class="genders labels" value="male" id="rad1" name="rads" required>Male
+            <input type="radio" class="genders labels" value="female" id="rad1" name="rads" required>Female
+        </form>
+        <br>
+        <a href="#result"><button type="button" name="button" onclick="checkDayOfWeek();">Check</button></a>
+        <h1 id="result"></h1>
+    </div>
     <script src="js/script.js"></script>
 </body>
 
