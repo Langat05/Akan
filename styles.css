@@ -1,12 +1,14 @@
 *{
-    color:blue;
+    color:rgb(20, 20, 19);
     font-size: 18px;
+    background-color: peru;
 }
 #result{
     font-style: oblique;
-    color:green;
+    color:rgb(0, 0, 0);
     font-size: 26px;
 }
 .page-footer{
     text-align: center;
 }
+
