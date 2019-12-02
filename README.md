@@ -22,7 +22,7 @@ The website uses gender to determine the name you could be having according to t
 - Bootstrap.css
 - Javascript
 ## Screenshot overview
- <img src="/home/moringa/Documents/Akan/image/Screenshot from 2019-12-02 08-39-19.png">
+ ![screenshot](image/screenshot.jpg)
 
 ## LICENSE
 - Licence under [MIT license](license)
