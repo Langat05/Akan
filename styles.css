@@ -1,15 +1,19 @@
 * {
     color: rgb(20, 20, 19);
     font-size: 18px;
-    background-color: peru;
+   
 }
 
 #result {
     font-style: oblique;
-    color: rgb(0, 0, 0);
+    color: rgb(13, 30, 179);
     font-size: 26px;
 }
 
 .page-footer {
     text-align: center;
+    background-color: bisque;
+}
+form{
+     background-color: bisque;
 }
