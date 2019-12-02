@@ -17,3 +17,7 @@
 form{
      background-color: bisque;
 }
+label{
+    color: rgb(0, 86, 136);
+    font-size: 20px;
+}
