@@ -22,3 +22,5 @@ The website uses gender to determine the name you could be having according to t
 - Bootstrap.css
 - Javascript
 
+## LICENSE
+- Licence under [MIT license](license)
