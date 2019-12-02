@@ -12,6 +12,7 @@
 
 </head>
 
+<body>
 
     <div class="container">
         <div class="jumbotron">
@@ -21,38 +22,42 @@
                 month, the year of birth and century to determine the name.<br> Oh! It is very accurate, try now and
                 have fun!</p>
         </div>
+        <form>
+            <div class="form-group">
+                <label for="century" class="labels">Century</label>
+                <input type="number" class="form-control" placeholder="for example 19" id="century" required min="1"
+                    max="30">
+            </div>
+            <div class="form-group">
+                <label for="year" class="labels">Year</label>
+                <input type="number" class="form-control" placeholder="for example 92" id="year" required min="1"
+                    max="100">
+            </div>
+            <div class="form-group">
+                <label for="month" class="labels">Month</label>
+                <input type="number" class="form-control" id="month" required min="1" max="12">
+            </div>
+            <div class="form-group">
+                <label for="monthDay" class="labels">Date of birth</label>
+                <input type="number" class="form-control" id="monthday" required min="0" max="12">
+            </div>
 
-        <div class="form-group">
-            <label for="century" class="labels">Century</label>
-            <input type="number" class="form-control" placeholder="for example 19" id="century" required min="1"
-                max="30">
-        </div>
-        <div class="form-group">
-            <label for="year" class="labels">Year</label>
-            <input type="number" class="form-control" placeholder="for example 92" id="year" required min="1000" max="2100">
-        </div>
-        <div class="form-group">
-            <label for="month" class="labels">Month</label>
-            <input type="number" class="form-control" id="month" required min="1" max="12">
-        </div>
-        <div class="form-group">
-            <label for="monthDay" class="labels">Date of birth</label>
-            <input type="number" class="form-control" id="monthday" required min="0" max="12">
-        </div>
-
-        <form class="radio-button">
-            <input type="radio" class="genders labels" value="male" id="rad1" name="rads" required>Male
-            <input type="radio" class="genders labels" value="female" id="rad1" name="rads" required>Female
+            <form class="radio-button">
+                <input type="radio" class="genders labels" value="male" id="rad1" name="rads" required>Male
+                <input type="radio" class="genders labels" value="female" id="rad1" name="rads" required>Female
+            </form>
+            <br>
+            <a href="#result"><button type="button" class="btn btn-outline-success" name="button"
+                    onclick="checkDayOfWeek();">Check</button></a>
+                    <button type="clear" onclick="window.location.reload();" class="btn btn-outline-danger">Clear</button>
+            <p id="result"></p>
         </form>
-        <br>
-        <a href="#result"><button type="button" class="btn btn-outline-success" name="button" onclick="checkDayOfWeek();">Check</button></a>
-        <p id="result"></p>
     </div>
     <footer class="page-footer ">
         <div class="footer-copyright">Copyright © 2019 December:
-          <p> Langat K Justus</p>
+            <p> Langat K Justus</p>
         </div>
-      </footer>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 
