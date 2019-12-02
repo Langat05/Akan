@@ -20,6 +20,9 @@ function getInput() {
     alert("invalid date");
 
   }
+  else{
+    console.log();
+  }
 }
 
 function calculateDay() {
